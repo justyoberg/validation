@@ -79,6 +79,9 @@ form.addEventListener("submit", (event) => {
   if (emailValid && countryValid && zipcodeValid && passwordValid && confirmValid) {
     validate.textContent = "Form submitted!";
     validate.className = "validate valid";
+    form.reset();
+    let inputs = document.querySelectorAll("input");
+    inputs.forEach((input) => input.className = ""); 
   } else {
     validate.textContent = "Invalid submission!";
     validate.className = "validate invalid";
