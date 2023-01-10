@@ -11,8 +11,6 @@ const emailRegExp =
 
 const numberRegExp = /(^\d{5}$)|(^\d{9}$)|(^\d{5}-\d{4}$)/;
 
-confirm.disabled = true;
-
 email.addEventListener("input", (event) => {
 
   if (emailRegExp.test(email.value)) {
