@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="index.js" defer></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <div class="container">
+    <h1>Form Validation</h1>
+    <form>
+      <p>
+        <label for="email">Enter your email: </label></br>
+        <input type="text" id="email" placeholder="john.smith@gmail.com">
+        <span></span>
+      </p>
+      <p>
+        <label for="country">Enter your country: </label></br>
+        <input type="text" id="country" placeholder="USA">
+        <span></span>
+      </p>
+      <p>
+        <label for="zipcode">Enter your zipcode: </label></br>
+        <input type="text" id="zipcode" placeholder="00000">
+        <span></span>
+      </p>
+      <p>
+        <label for="password">Enter your password: </label></br>
+        <input type="text" id="password" placeholder="Min. 8 characters">
+        <span></span>
+      </p>
+      <p>
+        <label for="confirmation">Confirm password: </label></br>
+        <input type="text" id="confirmation">
+        <span></span>
+      </p>
+      <button class="submit">Submit</button>
+    </form>
+    <h2 class="validate"></h2>
+  </div>
+
+</body>
+</html>
